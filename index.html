@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootrap CSS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="main_container">
+
+     <!--Naviagtion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="nav_bar_head d-flex">
+                <div class="nav_bar_head_logo">
+                    <img src="./images/img2.jpg" alt="" 
+                    class="d-inline-block align-text-top">
+                </div>
+                <div class="nav_bar_head_txt">
+                    <h1 class="nav_bar_head_txt_line1">Olivia</h1>
+                    <h1 class="nav_bar_head_txt_line1">Miller</h1>
+                </div>
+            </div>
+                
+               
+        <div class="vertical_line"></div>
+            <!--Navigation_search-->
+            <form class="d-flex search_box">
+                <input type="text" class="form-control me-2" type="search" placeholder="&#xF002; Search Dashboard..."   aria-label="Search" style="font-family: Arial, 'Font Awesome 5 Free'">
+                
+            </form>
+
+
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                <div class="nav_bar_dropdown1 d-flex">
+                    <div class="nav_bar_dropdown1_first">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><p class="nav_bar_dropdown1_first_text" style="color: blue;
+                        font-weight: bold;">Switch Company</p></a>
+                    </li>
+                    
+                    </div>
+                    <div class="vertical_line_2"></div>
+                    <div class="nav_bar_dropdown1_secoond">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: black;font-weight:700;">
+                                Oliver Miller
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    
+                    </div>
+
+                </div>
+                </ul>
+
+
+
+                <!--copy-->
+            <div class="vertical_line3"></div>
+            <div class="droppdown2 d-flex">
+                <div class="droppdown2_img">
+                    <img src="./images/profile.jpg" alt="">
+                </div>
+                <div class="dropdown2_txt">
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="margin-top: 2px;font-weight: 600;font-size: 19px;margin-left: 20px;">
+                            Welcome back,
+                        </button>
+                        <p class="dropdown2_txt_para">Yosil!</p>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+                
+            </div>
+          
+            
+        </div>
+    </nav>
+
+
+
+
+<!--header-->
+<div class="header d-flex bg-light">
+    <!--header1-->
+    <div class="header_1_logo d-flex">
+        <div class="header_1_img_logo">
+            <img src="./images/dashboard.webp" alt="">
+        </div>
+        <div class="header1_text">Dashboard</div>
+    </div>
+
+    <!--header2-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <ion-icon name="arrow-down-circle-outline"></ion-icon>
+        </div>
+        <div class="header_text">Receivables</div>
+    </div>
+
+    <!--header3-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        </div>
+        <div class="header_text">Returns</div>
+    </div>
+
+    <!--header4-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <ion-icon name="person-outline"></ion-icon>
+        </div>
+        <div class="header_text">Customers</div>
+    </div>
+
+    <!--header5-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <ion-icon name="calendar-clear-outline"></ion-icon>
+        </div>
+        <div class="header_text">Payable</div>
+    </div>
+
+    <!--header6-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <p>&dollar;</p>
+        </div>
+        <div class="header_text">Sales</div>
+    </div>
+
+    <!--header7-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <ion-icon name="reorder-four-outline"></ion-icon>
+        </div>
+        <div class="header_text">Inventory</div>
+    </div>
+
+
+    <!--header8-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <ion-icon name="arrow-down-outline"></ion-icon>
+        </div>
+        <div class="header_text">Imports</div>
+    </div>
+
+    <!--header9-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+        <ion-icon name="pricetag-outline"></ion-icon>
+        </div>
+        <div class="header_text">Cutting Tickets</div>
+    </div>
+
+    <!--header10-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <ion-icon name="swap-vertical-outline"></ion-icon>
+        </div>
+        <div class="header_text">EDI</div>
+    </div>
+
+    <!--header11-->
+    <div class="header_1 d-flex">
+        <div class="header_1_img">
+            <ion-icon name="location-outline"></ion-icon>
+        </div>
+        <div class="header_text">Showeoom</div>
+    </div>
+
+</div>
+
+<!--main_content-->
+
+<!--sidebar-->
+
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light sidebar ">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <div class="sidebar_logo d-flex" >
+                    <div class="sidebar_logo_img">
+                        <img src="./images/img2.jpg">
+                    </div>
+                    <div class="sidebar_logo_txt">
+                        <span class="fs-5 d-none d-sm-inline">Reports</span>
+                    </div>
+                </div>
+                
+                    
+                
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Company Snapshot</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Open Order Report</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Cut and sold lookup</span></a>
+                    </li>
+                    <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                            <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Inventory Snapshot</span></a>
+                        
+                    </li>
+                    <li>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Products</span> </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Balance to sells summary</span> </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Open Orders to pick</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Period comparison Report</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">SR available</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Sales Forecast Report</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Detailed Period Comparison Report</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Style cost Report</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Style cost Report(sales person)</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Traffic Report</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">Image cut and sold Report</span> </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline sidebar_menu">StyleSheets</span> </a>
+                    </li>
+                </ul>
+                
+                
+            </div>
+        </div>
+
+        <!--right body-->
+        <div class="col py-3 bg-light right">
+            <div class="right_body_top_row1">
+            
+            <!--row1 1-->
+            
+            <div class="d-flex">
+                <div class="row1 d-flex">
+                    <div class="dollar_sym">
+                        <h4 class="dollar_sym_name">&dollar;</h4>
+                    </div>
+                    <div class="number">
+                        <h4 class="right_body_row1_head">&dollar;32,350.00</h4>
+                        <p class="right_body_row1_para">Total Revenue</p>
+                    </div>
+            
+                </div>
+            
+                <!--row1 2-->
+                <div class="row1 d-flex">
+                    <div class="dollar_sym" style="background-color: rgb(211, 244, 255);">
+                        <h4 class="dollar_sym_name" style="color: blue;">&nearr;</h4>
+                    </div>
+                    <div class="number">
+                        <h4 class="right_body_row1_head">&dollar;6000</h4>
+                        <p class="right_body_row1_para">Total expences</p>
+                    </div>
+            
+                </div>
+            
+            
+                <!--row1 3-->
+                <div class="row1 d-flex">
+                    <div class="dollar_sym" style="background-color: rgb(220, 223, 222);">
+                        <img src="./images/box2.png" alt="" style="width: 45px; height: 45px;margin-left: -10px;">
+                    </div>
+                    <div class="number">
+                        <h4 class="right_body_row1_head">&dollar;56,034.00</h4>
+                        <p class="right_body_row1_para">Accounts Receivable</p>
+                    </div>
+            
+                </div>
+            
+            
+                <!--row1 4-->
+                <div class="row1 d-flex">
+                    <div class="dollar_sym" style="background-color: rgb(245, 193, 223);">
+                        <img src="./images/box3.png" alt="" style="width: 45px; height: 45px;margin-left: -10px;">
+                    </div>
+                    <div class="number">
+                        <h4 class="right_body_row1_head">&dollar;67,083.00</h4>
+                        <p class="right_body_row1_para">Accounts payable</p>
+                    </div>
+            
+                </div>
+
+            
+            </div>
+
+
+
+            <div class="d-flex">
+                <!--row2 1-->
+                
+                <div class="d-flex">
+                    <div class="row1 d-flex">
+                        <div class="dollar_sym">
+                        <img src="./images/gallery.png" alt="" style="width: 40px; height: 40px;margin-left: -8px;margin-top: 5px;">
+                        </div>
+                        <div class="number">
+                            <h4 class="right_body_row1_head">3478</h4>
+                            <p class="right_body_row1_para">Items missing Images</p>
+                        </div>
+                
+                    </div>
+                
+                    <!--row2 2-->
+                    <div class="row1 d-flex">
+                        <div class="dollar_sym" style="background-color: rgb(234, 255, 211);">
+                            <h4 class="dollar_sym_name" style="color: green;">&dollar;</h4>
+                        </div>
+                        <div class="number">
+                            <h4 class="right_body_row1_head">237</h4>
+                            <p class="right_body_row1_para"Items missing FOB Costs</p>
+                        </div>
+                
+                    </div>
+                
+                
+                    <!--row2 3-->
+                    <div class="row1 d-flex">
+                        <div class="dollar_sym" style="background-color: rgb(245, 211, 255);">
+                            <h4 class="dollar_sym_name" style="color: rgb(88, 25, 117);">&dollar;</h4>
+                        </div>
+                        <div class="number">
+                            <h4 class="right_body_row1_head">160</h4>
+                            <p class="right_body_row1_para">PO items missing costs</p>
+                        </div>
+                
+                    </div>
+                
+                
+                    <!--row2 4-->
+                    <div class="row1 d-flex">
+                        <div class="dollar_sym">
+                            <img src="./images/tab.png" alt="" style="width: 40px; height: 40px;margin-left: -8px;margin-top: 5px;">
+                        </div>
+                        <div class="number">
+                            <h4 class="right_body_row1_head">0/ &dollar; 0.00</h4>
+                            <p class="right_body_row1_para">Booked</p>
+                        </div>
+                
+                    </div>
+
+            </div>
+            
+
+
+            </div>
+        </div>
+
+        <!--Graphs-->
+        <div class="right_graph d-flex">
+            <div class="right_graph_left ">
+                <h4 class="graph_head">Invoices</h4>
+                <div class="col d-flex">
+                    <div class="graph_blue_box d-flex">
+                        <div class="graph_blue"></div>
+                        <div class="graph_txt">This week</div>
+                    </div>
+                    <div class="graph_red_box d-flex">
+                        <div class="graph_red"></div>
+                        <div class="graph_txt">This week</div>
+                    </div>
+                </div>
+               
+               
+                
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            </div>
+            <div class="right_graph_right">
+                
+                
+                
+                <h4 class="graph_head">Sales Forecast</h4>
+                    <div>
+                        <canvas id="myChart2"></canvas>
+                    </div>
+              
+            </div>
+
+        </div>
+        
+    </div>
+
+
+    
+</div>
+
+
+    </div>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Bootstrap script cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+</html>
